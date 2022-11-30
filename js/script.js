@@ -14,7 +14,15 @@ function getElementDiv (contentText) {
     return createdElement;
 }
 
+
 // ciclo che esegue la funzione getElementDiv 100 volte, inserendo ogni volta il numero dell'interazione come testo dell'elemento inserito
 for ( let i = 1 ; i < 101 ; i++) {
     getElementDiv(i);
 }
+
+
+
+
+
+
+let playButton = document.getElementById('playButton');

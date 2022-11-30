@@ -23,6 +23,10 @@ div div.casella {
     align-items: center;
 }
 
+#booleanLogo {
+    height: 100%;
+}
+
 #gameArea {
     height: 500px;
     width: 500px;
