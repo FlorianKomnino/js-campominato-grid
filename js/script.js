@@ -2,13 +2,14 @@ console.log('Hello World!');
 
 const gameArea = document.getElementById('gameArea');
 
-function getElementP (contentText) {
-    let createdElement = document.createElement('p');
-    gameArea.append(createdElement);
+function getElementDiv (contentText) {
+    let createdElement = document.createElement('div');
     createdElement.innerText = contentText;
+    createdElement.classList.add('casella', 'text-center');
+    gameArea.append(createdElement);
     return createdElement;
 }
 
 for ( let i = 1 ; i < 101 ; i++) {
-    getElementP(i);
+    getElementDiv(i);
 }

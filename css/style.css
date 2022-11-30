@@ -12,7 +12,7 @@ footer {
     height: 80px;
 }
 
-div p {
+div div.casella {
     height: 50px;
     width: 50px;
     background-color: red;
