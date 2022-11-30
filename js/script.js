@@ -5,7 +5,7 @@ const gameArea = document.getElementById('gameArea');
 function getElementDiv (contentText) {
     let createdElement = document.createElement('div');
     createdElement.innerText = contentText;
-    createdElement.classList.add('casella', 'text-center');
+    createdElement.classList.add('casella', 'p-2');
     gameArea.append(createdElement);
     return createdElement;
 }
