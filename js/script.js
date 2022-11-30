@@ -11,6 +11,9 @@ function getElementDiv (contentText, whereWillGo) {
     createdElement.classList.add('casella', 'p-2');
     // appendo l'elemento alla variabile gameArea
     whereWillGo.append(createdElement);
+    createdElement.addEventListener ('click', function() {
+        createdElement.classList.toggle('bgAlternativo');
+    })
     return createdElement;
 }
 
@@ -19,6 +22,7 @@ let playButton = document.getElementById('playButton');
 
 // event listener che permette l'interazione con il playButton
 playButton.addEventListener ('click', function() {
+    // svuoto l'area prima di iniziare il ciclo che inserisce gli elementi
     gameArea.innerHTML = '';
     // ciclo che esegue la funzione getElementDiv 100 volte, inserendo ogni volta il numero dell'interazione come testo dell'elemento inserito
     for ( let i = 1 ; i < 101 ; i++) {
